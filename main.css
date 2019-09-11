@@ -1,0 +1,752 @@
+body{
+    margin: 0 auto;
+    height: 100vh;
+    background: #333;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    /*width: 1800px;*/
+    
+}
+
+.header, .footer, .main {
+    font-size: 1rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.header {
+    height: 915px;
+    background:  url(assets/1.jpg);
+}
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.languages{
+    
+    flex-wrap: wrap;
+   width: 25%;
+   order: 1;  
+}
+.navigation{
+  flex-grow: 1;
+  order: 2;  
+}
+
+
+@media only screen and (max-width: 800px) {
+    .languages{
+        flex-basis: 25%;
+        height: 75%;
+        
+          
+     }
+     .navigation{
+        flex-basis: 75%;
+        height: 75%;   
+     }
+}
+
+    @media only screen and (max-width: 480px) {
+        .languages{
+            flex-basis: 100%;
+            height: 25%;  
+         }
+         .navigation{
+            flex-basis: 100%;
+            height: 50%;    
+         }
+                 
+    }
+    
+    .languages li{
+        display: inline-block;
+        color: #858688;
+        padding-right: 2px;
+    }
+    .languages a {
+        text-decoration: none;
+        color: #858688; 
+    }
+
+    
+    .languages ul{
+        padding: 0;
+    }
+    .languages{
+        padding-top: 56px;
+        padding-left: 198px;
+    }
+    h1{
+        font-size: 22pt;
+        color: #858688;
+        font-family: 'MyriadPro-Regular', sans-serif;
+        margin-bottom: 19px;
+    }
+    .colorH1{
+        color: #5b4295;
+    }
+    .navigation li {
+        display: inline-block;
+        color: #858688;
+        padding-right: 20px;
+    }
+    .navigation a {
+        text-decoration: none;
+        color: #858688; 
+    }
+    .navigation{
+        padding-top: 72px;
+        padding-left: 241px;
+        display: flex;  
+    }
+    .navigation span{
+        color: #454545;
+        padding: 17px;
+        padding-left: 43px;
+    }
+    .navigation button{
+        width: 95px;
+        height: 45px;
+        border-radius: 20% / 50%;
+        margin: 5px;
+        background: linear-gradient(to top left, #6275cb, #582c7e);
+        color: #ffffff;
+        border: none;
+        padding: 0;
+        font-size: 1rem;
+        box-shadow: 0px 10px 40px 5px #8080ff;    
+    }
+    .navigation span i{
+        padding-right: 10px;
+        color: #582c7e;
+    }
+
+
+
+
+
+
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 143px;
+    }
+    .account{
+        width: 90%;
+        order: 1;
+        
+     }
+     .icon{
+       flex-grow: 1;
+       order: 2;  
+     }
+     .account h2{
+        font-size: 3.5rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        color: #7a7a7a;
+    }
+    .account h3{
+        font-size: 2.2rem;
+        margin-top: 15px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        color: #7a7a7a;     
+    }
+    .account-text-red {
+        color: #fc6b6c;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        padding-top: 31px;
+        padding-left: 202px;
+
+    }
+    .button-account{
+        width: 250px;
+        height: 60px;
+        border-radius: 12% / 50%;
+        background: linear-gradient(to right, #6275cb, #582c7e);
+        border: none;
+        color: #ffffff;
+        font-size: 1.1rem;
+        padding: 0;
+    }
+    .button-apple, .button-android{
+        width: 45px;
+        height: 45px;
+        border-radius: 50% / 50%;
+        margin-top: 10px;
+        background: linear-gradient(to right, #6275cb, #582c7e);
+        border: none;
+        padding: 0;
+        font-size: 1.3rem;
+        color: #ffffff;  
+    }
+    .button-android img {
+        vertical-align: middle;
+        text-align: center;
+    }
+    .account-text{
+        padding-left: 190px;
+    }
+    .button button{
+        margin-right: 24px; 
+    }
+    
+    .icon span{
+        display: block;
+        
+           
+    }
+    .icon i{
+        font-size: 1.3rem;
+        padding-top: 15px;
+        padding-left: 130px;
+        color: #676766;
+    }
+    @media only screen and (max-width: 800px) {
+        .account{
+            flex-basis: 100%;
+            height: 100%;
+            
+         }
+         .icon{
+            flex-basis: 0;
+            height: 0;  
+         }
+         
+        }
+        @media only screen and (max-width: 480px) {
+            .account{
+                flex-basis: 100%;
+                height: 100%;
+                
+             }
+             .icon{
+                flex-basis: 0;
+                height: 0;  
+             }
+                 
+        }
+
+
+
+
+
+
+
+
+
+        .main {
+            background: #ffffff;
+        }
+
+        .Swiss-Privacy {
+            display: flex;
+
+        }
+        .security p{
+            width: 350px;
+            color: rgba(149, 147, 147, 255);
+        }
+        .security{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 100px;  
+        }
+        .Privacy h4{
+            margin: 0;
+            font-size: 2rem;
+            color: #6c6c6c;
+        }
+        .Privacy p{
+            margin: 0;
+            font-size: 1rem;
+            color: rgba(149, 147, 147, 255);
+        }
+       
+
+        @media only screen and (max-width: 800px) {
+            .Privacy1{
+                flex-basis: 50%;
+                height: 25%;
+                
+             }
+             .Privacy2{
+                flex-basis: 50%;
+                height: 25%;  
+             }
+             .Privacy3{
+                flex-basis: 50%;
+                height: 25%;
+                
+             }
+             
+            }
+            @media only screen and (max-width: 480px) {
+                .Privacy1{
+                    flex-basis: 100%;
+                    height: 30%;
+                    
+                 }
+                 .Privacy2{
+                    flex-basis: 100%;
+                    height: 30%;  
+                 }
+                 .Privacy3{
+                    flex-basis: 100%;
+                    height: 30%;
+                    
+                 }
+                     
+            }
+            .Physical {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .Physical-Security {
+                order: 1;
+                width: 62%;
+                display: flex;
+                flex-direction: column;
+                padding-top: 95px; 
+            }
+            .noting {
+                order: 2;
+                width: 37%;
+            }
+            .Physical-Security h2 {
+                display: flex;
+                font-size: 3.3rem;
+                justify-content: flex-end;
+                margin: 0;
+                text-align: right;
+                color: rgba(83, 83, 83, 255);
+            }
+            .Physical-Security p {
+                font-size: 1.5rem;
+                padding: 0;
+                margin: 10px;
+                margin-left: 450px;
+                text-align: right;
+                color: rgba(149, 147, 147, 255);
+            }
+            .Physical-Security-red {
+                color: #f65151;
+            }
+
+            @media only screen and (max-width: 800px) {
+                .Physical-Security{
+                    flex-basis: 85%;
+                    height: 100%;  
+                 }
+                 .noting{
+                    flex-basis: 0;
+                    height: 0;  
+                 }
+                }
+                @media only screen and (max-width: 480px) {
+                    .Physical-Security{
+                        flex-basis: 100%;
+                        height: 100%;  
+                     }
+                     .noting{
+                        flex-basis: 0;
+                        height: 0;  
+                     }
+                     .Physical-Security p {
+                        
+                        padding: 0%;
+                        margin: 0%;
+                        
+                    }
+                    }
+
+
+
+            .adapted-security p {
+                display: inline-block;
+                border: 1px solid #b9b9b9;
+                border-radius: 50px 50px;
+                padding: 17px;
+                padding-left: 27px;
+                padding-right: 29px;
+                margin-left: 975px;
+                color: rgba(103, 103, 103, 255);    
+            }
+            .adapted {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;   
+            }
+            .adapted-security img{
+                padding: 22px;
+            }
+            .slide-icon div {
+                width: 13px;
+                height: 13px;
+                background-color: #b7b7b7;
+                margin: 8px;
+                border-radius: 50% 50%;    
+            }
+            .slide-icon .active{
+                background-color: #101010;  
+            }
+            .slide-text p {
+                width: 557px;
+                font-size: 1.6rem;
+                margin: 0;
+                margin-left: 18px;
+                color: rgba(16, 16, 16, 255);
+            }
+            .cursiv {
+                font-size: 1rem;
+                color: #818181; 
+            }
+            .slider {
+                display: flex;
+                margin-left: -485px;
+                margin-top: 33px; 
+            }
+
+            @media only screen and (max-width: 800px) {
+                .adapted-security{
+                    flex-basis: 25%;
+                    height: 75%;
+                    margin: 0%;
+                    padding: 0%;     
+                 }
+                 .slider{
+                    flex-basis: 75%;
+                    height: 75%;
+                    margin: 0%;   
+                 }
+            }
+            
+                @media only screen and (max-width: 480px) {
+                    .adapted-security{
+                        flex-basis: 25%;
+                        height: 75%;
+                        margin: 0%;
+                        padding: 0%;     
+                     }
+                     .slider{
+                        flex-basis: 75%;
+                        height: 75%;
+                        margin: 0%;   
+                     }
+                             
+                }
+
+
+            .device-text p {
+                width: 450px;
+                text-align: right;
+                color: rgba(149, 147, 147, 255);
+            }
+            .device-text h2 {
+                margin: 0;
+                font-size: 2rem;
+                width: 425px;
+                text-align: right;
+                color: rgba(83, 83, 83, 255);  
+            }
+            .device-text {
+                display: flex;
+                flex-direction: column;
+            }
+            .device {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 125px;   
+            }
+            .main {
+                background-image: url(assets/comp.png);
+                background-repeat: no-repeat;
+                background-position: 950px 645px;    
+            }
+            .device-icon {
+                margin: 15px;
+                margin-left: 60px;
+                padding: 5px;
+            }
+            .device-icon img {
+                padding: 5px;
+            }
+            .support-button-upgrade {
+                width: 250px;
+                height: 60px;
+                border-radius: 12% / 50%;
+                margin-right: 40px;
+                background: linear-gradient(to right, #6275cb, #582c7e);
+                border: none;
+                color: #ffffff;
+                font-size: 1.1rem;
+                box-shadow: 0px 4px 20px 4px #5522dd;
+            }
+            .support-button-upgrade i {
+                margin-right: 10px;
+            }
+            .support-button-donate {
+                width: 170px;
+                height: 60px;
+                border-radius: 20% / 50%;
+                background: linear-gradient(to right, #35bbe0, #5e7bea);
+                border: none;
+                color: #ffffff;
+                font-size: 1.1rem;
+                box-shadow: 0px 4px 20px 4px #1196ee; 
+            }
+            .support-button-donate i {
+                margin-right: 10px; 
+            }
+        
+            
+            .support {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 210px;
+                margin-bottom: 40px;
+            }
+            .support-text h2 {
+                font-size: 2rem;
+                margin: 0;
+            }
+            .support-text p {
+                font-size: 1.8rem;
+                margin: 0;
+            }
+            .support-button {
+                margin: 40px;    
+            }
+            .support-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: rgba(83, 83, 83, 255);
+            }
+
+
+
+
+
+            .footer {
+                background: #ffffff;
+            }
+            .brands img {
+                font-size: 0rem;
+                background: #ffffff;
+            }
+            .brands p {
+                margin: 0;
+                padding: 10px;
+                text-align: right;
+                margin-right: 50px;
+                font-size: 0.9rem;
+                color: rgba(122, 122, 122, 255);    
+            }
+            .brands {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                border-right: 1px solid #b9b9b9;
+                border-top: 1px solid #b9b9b9;
+                margin-right: 360px;
+            }
+            .footer-sitebar {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left: 215px;
+                margin-top: 155px; 
+            }
+            .down {
+                padding-bottom: 32px;
+            }
+            .sitebar p{
+                margin: 5px;
+            }
+            .footer-sitebar p {
+                margin-top: 0;
+            }
+            .footer-sitebar ul {
+                direction: rtl;
+                list-style-type: square;
+            }
+            .Company {
+                width: 175px;
+                text-align: right;
+                color: rgba(92, 92, 92, 255);
+                
+            }
+            .Legal {
+                width: 240px;
+                text-align: right;
+                color: rgba(92, 92, 92, 255);
+            }
+            .NeutronMail {
+                width: 210px;
+                text-align: right;
+                color: rgba(92, 92, 92, 255);
+            }
+            .Company p {
+                margin-bottom: 30px;
+                margin-right: 35px;
+            }
+            .Legal p {
+                margin-bottom: 30px;
+                margin-right: 20px;
+            }
+            .NeutronMail p {
+                margin-bottom: 30px;
+                margin-right: 40px;
+            }
+            .sitebar {
+                padding-right: 350px;
+                font-size: 0.8rem;
+                color: rgba(92, 92, 92, 255);
+            }
+            .sitebar a {
+                text-decoration: none;
+                color: #333;
+            }
+
+            .social li {
+                display: inline-block;
+                padding-right: 10px;
+            }
+            .social {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-top: 50px;
+                margin-left: 200px;
+                font-size: 0.7rem;
+                color: rgba(92, 92, 92, 255);
+            }
+            .social ul {
+                padding: 0;
+            }
+            .social a {
+                color: rgba(92, 92, 92, 255);
+            }
+            
+
+            .Company li {
+                padding-bottom: 7px;
+                font-size: 0.9rem;
+            }
+            .Legal li {
+                padding-bottom: 7px;
+                font-size: 0.9rem;
+            }
+            .NeutronMail li {
+                padding-bottom: 7px;
+                font-size: 0.9rem;
+            }
+
+
+            @media only screen and (max-width: 800px) {
+                .sitebar{
+                    flex-basis: 25%;
+                    height: 20%;
+                    margin: 0%;
+                    padding: 0%;     
+                 }
+                 .Company{
+                    flex-basis: 25%;
+                    height: 20%;
+                    margin: 0%;
+                    padding: 0%;     
+                 }
+                 .Legal{
+                    flex-basis: 25%;
+                    height: 20%;
+                    margin: 0%;
+                    padding: 0%;     
+                 }
+                 .NeutronMail{
+                    flex-basis: 25%;
+                    height: 20%;
+                    margin: 0%;
+                    padding: 0%;     
+                 }
+                 
+            }
+            
+                @media only screen and (max-width: 480px) {
+                    .sitebar{
+                        flex-basis: 25%;
+                        height: 20%;
+                        margin: 0%;
+                        padding: 0%;     
+                     }
+                     .Company{
+                        flex-basis: 25%;
+                        height: 20%;
+                        margin: 0%;
+                        padding: 0%;     
+                     }
+                     .Legal{
+                        flex-basis: 25%;
+                        height: 20%;
+                        margin: 0%;
+                        padding: 0%;     
+                     }
+                     .NeutronMail{
+                        flex-basis: 25%;
+                        height: 20%;
+                        margin: 0%;
+                        padding: 0%;     
+                     }
+                             
+                }
+                    
+            
+            
+
+
+
+
+
+/*.main {
+    height: calc(100% - 1000px);
+}*/
+
+/*
+
+
+
+
+
+
+
+.images div button{
+    display: inline-block;
+    margin-right: 24px;  
+}
+.button-account{
+    width: 250px;
+    height: 60px;
+    border-radius: 15% / 50%;
+}
+.button-apple, .button-android{
+    width: 45px;
+    height: 45px;
+    border-radius: 50% / 50%;  
+}
+
